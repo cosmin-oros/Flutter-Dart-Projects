@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+// import 'package:http/http.dart';
+// import 'dart:convert';
 
 void main () => runApp(
   MaterialApp(
@@ -25,6 +28,8 @@ class _HomeState extends State<Home>{
             width: MediaQuery.of(context).size.width,
             color: Colors.red,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.only(bottom: 10.0),
@@ -36,7 +41,25 @@ class _HomeState extends State<Home>{
                       fontWeight: FontWeight.w600
                     ),
                   ),
-                  
+                ),
+                Text(
+                    "52\u00B0",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 40.0,
+                      fontWeight: FontWeight.w600
+                    ),
+                  ),
+                  Padding(
+                  padding: EdgeInsets.only(top: 10.0),
+                  child: Text(
+                    "Rain",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.w600
+                    ),
+                  ),
                 )
               ]
               ),
